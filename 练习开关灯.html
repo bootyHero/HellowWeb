@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: lightsalmon;
+        }
+        .main{
+            width: 500px;
+            margin: 100px auto;
+        }
+        button{
+            width:100%;
+            height: 70px;
+            line-height: 70px;
+            text-align: center;
+            background-color: rgb(255, 38, 0);
+            border-radius: 15px;
+            display: block;
+            font-size: 20px;
+        }
+        img{
+            width: 100%;
+            height: 350px;
+            border-radius: 15px;
+            display: block;
+        }
+    </style>
+</head>
+<body id="body">
+    <div id="main" class="main">
+        <button id="box">牛气冲天</button>
+        <img id="img" src="https://bpic.588ku.com/ad_diversion/20/11/11/b296ba6b9184879b78d5077506552ef5.gif" alt="">
+    </div>
+</body>
+</html>
+<script>
+    var box=document.getElementById("box");
+    var img=document.getElementById("img");
+    box.onclick=function(){
+        text=box.innerText;
+        if(text=="牛气冲天"){
+            box.innerText="牛歇菜了";
+            img.style.display="none";
+            body.style.background="gray";
+        }else{
+            img.style.display="block";
+            box.innerText="牛气冲天";
+            body.style.background="lightsalmon";
+
+        }
+    }
+</script>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</body>
+</html>
+<script>
+    // 通过标签名去得到(元素)一个类数组，标签集合
+    // 相当于一个数组，有索引
+    // 想获取其中某一个li时，可以用lis[2].来获取
+    var lis=document.getElementsByTagName("li");
+    lis[2].onclick=function(){
+         console.log(111);
+    }
+    </script>

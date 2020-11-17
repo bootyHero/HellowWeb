@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        ul,ol{
+            list-style: none;
+        }
+        .main{
+            width: 500px;
+            margin: 0 auto;
+        }
+        body{
+            background-color: lightcyan;
+        }
+        .main li{
+            height: 40px;
+            line-height: 40px;
+            text-indent: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="main" id="main">
+        <li>据俄罗斯媒体报道,乔·拜登11月10日表示</li>
+        <li>据俄罗斯媒体报道,乔·拜登11月10日表示</li>
+        <li>据俄罗斯媒体报道,乔·拜登11月10日表示</li>
+        <li>据俄罗斯媒体报道,乔·拜登11月10日表示</li>
+        <li>据俄罗斯媒体报道,乔·拜登11月10日表示</li>
+        <li>据俄罗斯媒体报道,乔·拜登11月10日表示</li>
+        <li>据俄罗斯媒体报道,乔·拜登11月10日表示</li>
+        <li>据俄罗斯媒体报道,乔·拜登11月10日表示</li>
+    </ul>
+</body>
+</html>
+<script>
+    //可以先给ul大盒子来一个提取并给一个类名
+    var obmal=document.getElementById("main");
+    //然后提取ul中的li。  记住，document要换成ul的那个类名
+    var lis=obmal.getElementsByTagName("li");
+    //因为li中奇偶行的颜色都不一样，所以要用到for循环，循环进行下去
+    for(var i=0;i<lis.length;i++){
+        //可以利用，if判断，判断是否为奇偶，如果是偶数，一个背景颜色。如果是奇数，一个背景颜色。
+        if(i%2==0){
+            lis[i].style.backgroundColor="lightgreen";
+        }else{
+            lis[i].style.backgroundColor="yellow";
+        }
+        //这是设置鼠标划上li的样式，记住一定是lis[i],因为每个li的颜色不一样
+        //为什么？是因为每个li的颜色都不一样，所以用lis[i]
+        lis[i].onmouseover=function(){
+            //this：代表当前你所选中的li列表
+            //这个意思是保留旧的背景颜色
+            this.oldColor=this.style.backgroundColor;
+            //
+            this.style.backgroundColor="lightblue";
+        }
+        //鼠标离开的时候，会还原到以前的背景颜色
+        lis[i].onmouseout=function(){
+            this.style.backgroundColor=this.oldColor;
+        }
+    }
+</script>

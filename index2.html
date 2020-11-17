@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 100px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box" class="box" style="color: red;">该起床了</div>
+    <div id="box1" class="box" style="color: green;">该起床了</div>
+    <div id="box2" class="box" style="color: yellow;">该起床了</div>
+</body>
+
+</html>
+<script>
+    var box = document.getElementById("box");
+    // 绑定点击事件:点击获取颜色
+    // this表示你点击的时候，要获取的是这个属性的属性值
+    box.onclick = function () {
+        console.log(this.style.color);
+    }
+    box1.onclick = function () {
+        console.log(this.style.color);
+    }
+    box2.onclick = function () {
+        console.log(this.style.color);
+        // 点击的时候让他改变颜色
+        box.style.color = "blue";
+        // 或者用this，指的就是你当前绑定的元素
+        this.style.color = "blue";
+    }
+    // 鼠标划上事件
+    box.onmouseover = function () {
+        alert("滑上");
+    }
+    // 鼠标离开事件
+    box.onmouseout = function () {
+        console.log("离开");
+    }
+</script>
