@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 300px;
+            height: 100px;
+            margin: 50px auto;
+            line-height: 100px;
+            border: 3px solid lightcyan;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="gift" class="main"></div>
+</body>
+</html>
+<script>
+        var str="0123456789";
+    function time(str){
+        var text="";
+        for(var i=0;i<4;i++){
+            var index=Math.round(Math.random()*9);
+            text+=str[index];
+        }
+        return text;
+    }
+    var gift=document.getElementById("gift");
+    gift.innerHTML=time(str);
+
+    var team=setInterval(function(){
+        gift.innerHTML=time(str);
+    },1000);
+    var team1=setTimeout(function(){
+        clearInterval(team);
+        team=null;
+        clearTimeout(team1);
+        team1=null;
+    },10000);
+</script>
