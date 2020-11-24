@@ -1,0 +1,475 @@
+html{
+    font-size: 100px;
+}
+html,body{
+    background-color: #f5f5f5;
+}
+.md{
+    width: 12.26rem;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+}
+header a{
+    background: url("../images/adv1.jpg")center center no-repeat;
+    background-size: cover;
+    display: block;
+    height: 1.2rem;
+}
+.list{
+    background-color: #333;
+    font-size: 0.12rem;
+    height: 0.4rem;
+    line-height: 0.4rem;
+}
+.nav .navIn{
+    float: left;
+}
+.nav .navBox{
+    float: right;
+}
+.navIn a,.navBox a{
+    color:#b0b0b0;
+}
+.navIn span,.navBox span{
+    color: #424242;
+    margin: 0 .3em;
+}
+.navigation{
+    height: 1rem;
+    font-size: 16px;
+    color: #333;
+    line-height: 1rem;
+}
+.navigation .logo{
+    background: url("../images/mi-logo.png") center center no-repeat;
+    background-size: cover;
+    display: block;
+    width: 0.49rem;
+    height: 0.49rem;
+    margin-top: 0.05rem;
+    margin-left: 0.03rem;
+}
+.navigation span{
+    float: left;
+    margin-top: 0.2rem;
+    width: 0.55rem;height: 0.55rem;
+    background-color: rgb(255, 94, 0);
+}
+.navigation .pic{
+    background: url("../images/logo3.gif") center center no-repeat;
+    float: left;
+    width: 1.65rem;
+    height: 1rem;
+}
+.appliance li{
+    float: left;
+    margin-left: 0.2rem;
+
+}
+.appliance li>a{
+    font-size: 0.16rem;
+    color: #333;
+}
+.navigation{
+    position: relative;
+}
+.navigation input{
+    float: right;
+    width: 2.45rem;
+    height: 0.5rem;
+    text-indent: 2em;
+    margin-top: 0.2rem;
+}
+.banner{
+      width: 12.26rem;
+      height: 4.6rem;
+      /* position: relative; */
+}
+.swiper-container {
+    width: 100%;
+    height: 4.6rem;
+    /* background-color: orangered; */
+}  
+#slide1,#slide2,#slide3,#slide4,#slide5{
+    background: url("../images/banner.webp") center center no-repeat;
+    background-size: cover;
+}
+#slide2{
+    background-image: url("../images/banner2.webp");
+}
+#slide3{
+    background-image: url("../images/banner3.webp");
+}
+#slide4{
+    background-image: url("../images/banner4.webp");
+}
+#slide5{
+    background-image: url("../images/banner5.jpg");
+}
+.sliderBar{
+    width: 2.34rem;
+    height: 4.6rem;
+    background:rgba(101, 101, 105, 0.6);
+    position: absolute;
+    left:1.46rem; 
+    top: 2.6rem;
+    /* 用padding时，给他的父级加padding */
+    padding:0.2rem 0rem;
+    box-sizing: border-box;
+    z-index: 999;
+}
+.sliderBar li{
+    height: 0.42rem;
+    line-height: 0.42rem;
+    padding: 0rem 0.3rem;
+}
+.sliderBar li:hover{
+    background-color: #ff6700;
+}
+
+.sliderBar li>a{
+    display: block;
+    height: 100%;
+    color: #fff;
+    font-size: 0.14rem;
+}
+.sliderBar li .text{
+    float: left;
+}
+.sliderBar li span>img{
+    float: right;
+    width: 0.16rem;
+    height: 0.16rem;
+    margin-top: -0.3rem;
+}
+.sliderBar li .content{
+    position: absolute;
+    left: 2.34rem;
+    top: 0rem;
+    background-color: lightgoldenrodyellow;
+    float: left;
+    width: 5rem;
+    height: 100%;
+    display: none;
+}
+.sliderBar li:hover .content{
+    display: block;
+}
+.menu{
+    display: block;
+    height: 1.2rem;
+    background: url("../images/mi.webp")center center no-repeat;
+    background-size: cover;
+    margin-top: 0.2rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
+.top,.top1{
+    height: 0.58rem;
+    padding: 0rem 0.2rem;
+}
+.phone .top>h2,.Electrical .top1>h4{
+    float: left;
+    font-size: 0.22rem;
+    height: 0.58rem;
+    font-weight: 200;
+}
+/* 家电模块和手机模块 */
+.phone .top>a,.Electrical .top1>.a1,.Electrical .top1>.a2{
+    float: right;
+    font-size: 0.16rem;
+    color: #424242;
+}
+.Electrical .top1>.a1:hover{
+    color: rgb(255, 123, 0);
+}
+.Electrical .top1>.a2:hover{
+    color: rgb(255, 123, 0);
+}
+.Electrical .top1>.a2{
+    margin-right: 0.2rem;
+}
+.bottom{
+    height: 6.14rem;
+}
+.bootom .a1{
+    float: left;
+    width: 2.34rem;
+    height:6.14rem;
+    background: url("../images/3.webp")center center no-repeat;
+    background-size: cover;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    -ms-border-radius: 0.1rem;
+    -o-border-radius: 0.1rem;
+}
+.plan li{
+    float: left;
+    width: 2.34rem;
+    height: 2.6rem;
+    text-align: center;
+    background-color: #fff;
+    padding: 0.2rem 0rem;
+    margin: 0 0 0.14rem 0.14rem;
+    margin-bottom: 0.2rem;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    -ms-border-radius: 0.1rem;
+    -o-border-radius: 0.1rem;
+}
+.plan li a>img{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 auto;
+}
+.plan li a>h4{
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333;
+    height: 0.2rem;
+    margin-top: 0.2rem;
+}
+.plan li a>p:nth-of-type(1){
+    height: 0.18rem;
+    font-size: 0.12rem;
+    color: #b0b0b0;
+}
+.plan li a>p:nth-of-type(2){
+    height: 0.2rem;
+    font-size: 0.14rem;
+    color: #ff6700;
+    margin-top: 0.1rem;
+}
+.plan li:hover{
+    transform: translateY(-0.05rem);
+    -webkit-transform: translateY(-0.05rem);
+    -moz-transform: translateY(-0.05rem);
+    -ms-transform: translateY(-0.05rem);
+    -o-transform: translateY(-0.05rem);
+    box-shadow: 0 0 0.1rem 0.01rem rgb(161, 146, 146);
+}
+.adv2{
+    display: block;
+    height: 1.2rem;
+    background: url("../images/k30.webp")center center no-repeat;
+    background-size: cover;
+    margin-bottom: 0.2rem;
+    border-radius: 0.2rem;
+    -webkit-border-radius: 0.2rem;
+    -moz-border-radius: 0.2rem;
+    -ms-border-radius: 0.2rem;
+    -o-border-radius: 0.2rem;
+}
+.bottom1 .left2{
+    float: left;
+    width: 2.34rem;
+}
+.bottom1 .left2>img{
+     width: 100%;
+     height: 3rem;
+     border-radius: 0.1rem;
+     -webkit-border-radius: 0.1rem;
+     -moz-border-radius: 0.1rem;
+     -ms-border-radius: 0.1rem;
+     -o-border-radius: 0.1rem;
+}
+.left2 .pic2{
+    margin-top: 0.14rem;
+}
+
+.right2 li{
+    float: left;
+    width: 2.34rem;
+    height: 2.6rem;
+    text-align: center;
+    background-color: #fff;
+    padding: 0.2rem 0rem;
+    margin: 0 0 0.14rem 0.14rem;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    -ms-border-radius: 0.1rem;
+    -o-border-radius: 0.1rem;
+}
+.right2 li a>img{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 auto;
+}
+.right2 li a>h4{
+    font-size: 0.14rem;
+    font-weight: 400;
+    color: #333;
+    height: 0.2rem;
+}
+.right2 li a>p:nth-of-type(1){
+    height: 0.18rem;
+    font-size: 0.12rem;
+    color: #b0b0b0;
+}
+.right2 li a>p:nth-of-type(2){
+    height: 0.2rem;
+    font-size: 0.14rem;
+    color: #ff6700;
+    margin-top: 0.1rem;
+}
+.right2 li:hover{
+    transform: translateY(-0.05rem);
+    -webkit-transform: translateY(-0.05rem);
+    -moz-transform: translateY(-0.05rem);
+    -ms-transform: translateY(-0.05rem);
+    -o-transform: translateY(-0.05rem);
+    box-shadow: 0 0 0.1rem 0.01rem rgb(161, 146, 146);
+}
+/* 模块样式 */
+.bottom1 .left2>img:hover{
+    transform: translateY(-0.05rem);
+    -webkit-transform: translateY(-0.05rem);
+    -moz-transform: translateY(-0.05rem);
+    -ms-transform: translateY(-0.05rem);
+    -o-transform: translateY(-0.05rem);
+    box-shadow: 0 0 0.1rem 0.01rem rgb(161, 146, 146);
+
+}
+.right2 li>a .pic3{
+    height: 1.2rem;
+}
+.right2 li>a span{
+    height: 1.34rem;
+    line-height: 1.34rem;
+    text-align: center;
+    color: #ff6700;
+    display: block;
+    font-size: 0.25rem;
+    opacity: 0.7;
+}
+.right2 li>a span:hover{
+    color: springgreen;
+    opacity: 0.9;
+}
+.sidebar{
+    width: 0.84rem;
+    height: 4.61rem;
+    text-align: center;
+    position: fixed;
+    right: 0rem;
+    bottom: 1rem;
+    background-color: #fff;
+}
+.sidebar li{
+    height: 0.9rem;
+    z-index: 999;
+    border: 1px solid #f5f5f5;
+    position: relative;
+    color: #757575;
+}
+.sidebar li>img{
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    right: 0.25rem;
+    top: 0.2rem;
+}
+.sidebar li>span{
+    position: absolute;
+    right: 0.16rem;
+    bottom: 0.15rem;
+    font-size: 0.14rem;
+}
+.sidebar li:hover{
+    color: #ff6700;
+}
+.over{
+    box-sizing: border-box;
+    margin-bottom: 0.2rem;
+    border-bottom: 1px solid #e0e0e0;
+    height: 0.8rem;
+    padding: 0.3rem 0rem;
+
+}
+.over li{
+    float: left;
+    width: 2.42rem;
+    /* line-height: 0.8rem; */
+    padding-left: 0.58rem;
+    box-sizing: border-box;
+    border-right: 1px solid #e6e6e6;
+
+
+}
+.over .iconfont{
+    font-size: 0.16rem;
+    width: 0.24rem;
+    height: 0.24rem;
+    color: #616161;
+}
+.over .iconfont:hover{
+    color:#ff6700 ;
+}
+footer{
+    background-color: rgb(240, 238, 238);
+}
+
+.ending ul{
+    float: left;
+    height: 2.31rem;
+}
+.ending ul h2{
+    font-size: 0.14rem;
+    color: #2e2d2d;
+    font-weight: 400;
+    line-height: 1.25;
+    margin-top: 0.26rem;
+    margin-bottom: 0.1rem;
+
+}
+.ending ul a{
+display: block;
+font-size: 0.12rem;
+color: #6d6d6d;
+}
+.ending ul li{
+    z-index: 999;
+    text-align: left;
+    width: 1.6rem;
+    margin-top: 0.15rem;
+}
+.ending ul:nth-last-child(1){
+    border-right: 1px solid #e0e0e0;
+    box-sizing: border-box;
+}
+.ending ul li:hover a{
+      color: #ff6700;
+}
+.bigbig{
+    float: left;
+}
+.bigbig img{
+    display: inline-block;
+    width: 2.5rem;
+    height: 1.9rem;
+    margin-left: 0.15rem;
+    border-radius: 0.1rem;
+    -webkit-border-radius: 0.1rem;
+    -moz-border-radius: 0.1rem;
+    -ms-border-radius: 0.1rem;
+    -o-border-radius: 0.1rem;
+    opacity: 0.7;
+}
+.bigbig img:hover{
+    transform: translateY(-0.05rem);
+    -webkit-transform: translateY(-0.05rem);
+    -moz-transform: translateY(-0.05rem);
+    -ms-transform: translateY(-0.05rem);
+    -o-transform: translateY(-0.05rem);
+    opacity: 0.9;
+}
