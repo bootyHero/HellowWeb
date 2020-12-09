@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 250px;
+            margin: 800px auto;
+        }
+        img{
+            width:100%;
+            height:100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="box">
+        <img src="./img/default.jpg" true-img="./img/2.jpg" alt="">
+    </div>
+</body>
+</html>
+<script src="utils.js"></script>
+<script>
+    let box=document.getElementById("box");
+    let img=document.getElementsByTagName("img")[0];
+    function check(){
+        if(img.flag){  //只让图片加载一次
+            return;
+        }
+      let boxH=box.offsetHeight;  //当前盒子的总高度==照片的高度
+      let boxT=utils.offset(box).top;  //获取当前图片距离body的上偏移量
+      let winH=utils.win('clientHeight');//获取当前可视区的高度
+      let winT=utils.win('scrollTop');//滚动条高度
+      if(winT+winH+100>=boxT+boxH){   //
+          let trueImg=img.getAttribute("true-img");
+        //   异常处理
+        let newImg=new Image;  //创建一个img标签,利用img的原生方法属性，检验你的引入图片路径是否正确
+        newImg.src=trueImg;
+        newImg.onload=function(){
+            // 如果路径是对的，就会执行这个函数
+            img.src=trueImg;
+          img.flag=true;
+          fadeIn(img);
+        }
+        newImg.onerror=function(){
+            // 如果路径是错误的，就会让onerror执行
+            img.src="./img/10.jpg";
+            img.flag=true;
+        }
+      }
+    }
+    function fadeIn(img){  //让图片缓缓清晰
+        img.style.opacity=0.01;
+        let num=Number(img.style.opacity);
+        let time=setInterval(()=>{
+               num+=0.01;
+               img.style.opacity=num;
+               if(num>=1){
+                   clearInterval(time);
+               }
+        },17);
+    }
+    window.onscroll=check;
+</script>
